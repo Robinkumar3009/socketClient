@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+</head>
+<body>
+    <div id="banner"></div>
+    <div id="peopleButton">
+        <button class="random" id="random" onclick="swithTochatBox()" > Random People</button>
+        <button class="known" id="known" onclick="hideKnowPeople()"> Known People</button>
+    </div>
+
+
+    <div  style="display: none;" id="knownPeople">
+        <input type=" text" placeholder="write id of your friend" id="knownPeopleId">
+        <button id="connectButton" onclick="swithTochatBox()">connect</button>
+    </div>
+
+    <div style="display: none;"  class="chatContainer" id="chatContainer">
+        <div style="height: 200px; width: 500px; border: 1px solid black; border-radius: 10px; border-color: black;" class="'chat-box" id="chat-box">
+            <div class="message received" id="receiver"></div>
+        </div>
+        <div class="user-input">
+
+            <input type="text" id="user-message" placeholder="Write here">
+              <button id="sendButton">send</button>
+        </div>
+       
+        
+    </div>
+  
+
+    <script src="./index.js"></script>
+</body>
+</html>
